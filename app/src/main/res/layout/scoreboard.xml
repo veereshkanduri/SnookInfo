@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/green_cloth">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:background="#0047b3"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/user1_heading"
+            android:layout_width="0dp"
+            android:layout_weight="45"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="32sp"
+            android:gravity="center_horizontal"
+            tools:text="user1"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="10"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:gravity="center_horizontal"
+            android:textSize="24sp"
+            android:text="vs" />
+        <TextView
+            android:id="@+id/user2_heading"
+            android:gravity="center_horizontal"
+            android:layout_weight="45"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="32sp"
+            tools:text="User2"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/user1_score"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            android:textColor="#ffff1a"
+            android:text="00"
+            tools:text="45"/>
+        <TextView
+            android:id="@+id/user2_score"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            android:textColor="#ffff1a"
+            android:text="00"
+            tools:text="45"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:background="#0047b3"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"
+            android:text=" Current Player "
+            android:textColor="#ffad99 "
+            android:textStyle="bold"
+            android:backgroundTint="#F8F8F8"
+            android:textSize="24sp"
+            />
+        <TextView
+            android:id="@+id/current_player_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"
+            android:textSize="32sp"
+            android:background="#F8F8F8"
+            android:gravity="center"
+            android:textAllCaps="true"
+            tools:text="player1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:text="Break Score**"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#ffb84d"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/current_break_score"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:textSize="40sp"
+            android:layout_marginLeft="24dp"
+            android:textColor="@android:color/holo_red_light"
+            android:gravity="center"
+            android:text="0"
+            android:backgroundTint="#F8F8F8"
+            android:background="@android:drawable/toast_frame"
+            tools:text="45"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <Button
+            android:id="@+id/red_ball_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/red_ball"
+            android:layout_margin="16dp"/>
+
+        <Button
+            android:id="@+id/yellow_ball_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/yellow_ball"
+            android:layout_margin="16dp"/>
+        <Button
+            android:id="@+id/green_ball_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/green_ball"
+            android:layout_margin="16dp"/>
+        <Button
+            android:id="@+id/brown_ball_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/brown_ball"
+            android:layout_margin="16dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <Button
+            android:id="@+id/blue_ball_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/blue_ball"
+            android:layout_margin="16dp"/>
+
+        <Button
+            android:id="@+id/pink_ball_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/pink_ball"
+            android:layout_margin="16dp"/>
+        <Button
+            android:id="@+id/black_ball_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/black_ball"
+            android:layout_margin="16dp"/>
+        
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginVertical="16dp">
+        <Button
+            android:id="@+id/break_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BREAK"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginRight="64dp"/>
+
+        <Button
+            android:id="@+id/foul_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FOUL!"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/finish_button"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_red_dark"
+        android:textColor="@android:color/white"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:text="  FINISH  "/>
+</LinearLayout>
